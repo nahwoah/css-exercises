@@ -1,0 +1,25 @@
+.class-one,.class-two,.class-three{
+    background-color: pink;
+    /* font: 900; */
+    font-family: Verdana, sans-serif;
+    font-weight: 500;
+    /* font-size: 24px; */
+}
+
+.sep-class{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+#string-id-one{
+    color: blue;
+    font-size: 36px;
+    font-weight:500;
+}
+
+#string-id-two{
+    background-color: lightgreen;
+    font-weight: bold;
+    font-size: 24px;
+}
