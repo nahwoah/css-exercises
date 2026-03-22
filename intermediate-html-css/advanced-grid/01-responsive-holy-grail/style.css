@@ -5,10 +5,14 @@ html {
 }
 
 .container {
+  display: grid;
+  gap: 1vh;;
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  grid-template-columns: 1.5fr 3fr;
+  /* grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) minmax(1fr, 1fr) minmax(150px, 1fr);  */
 }
 
 .container div {
