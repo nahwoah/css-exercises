@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: minmax(5%, 200px) 1fr;
   grid-template-rows: 10% 10% 70% 5%;
+  
 }
 
 .container div {
@@ -27,9 +28,9 @@
   
 }
 
-/* .logo{
+.logo{
   grid-column: 1/1;
-} */
+}
 
 
 .menu ul,
@@ -39,8 +40,9 @@
 
 .menu ul{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+  justify-content: center;
 }
 
 /* .menu ul li:last-child{
@@ -81,7 +83,6 @@
   background-color: #C50208;
   /* grid-column: span 3; */
   grid-row: 2;
-
 }
 
 .nav ul li {
@@ -89,13 +90,20 @@
   text-transform: uppercase;
 }
 
+.nav ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+
+
 .article {
   background-color: #bccbde;
   grid-row: 3/4;
   display: grid;
   gap: 1vh;
   grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(15vh, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr));
+  resize: both;
 }
 
 .article p {
